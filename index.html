@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights: The Beginner's Guide to AI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ebee; /* Light blue-grey background */
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff; /* Bright blue header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            display: flex; /* Use Flexbox for main content + sidebar layout */
+            gap: 20px;
+        }
+
+        /* Main Blog Content Area */
+        .main-content {
+            flex: 3; /* Takes up 3/4 of the space */
+        }
+
+        /* Sidebar Area */
+        .sidebar {
+            flex: 1; /* Takes up 1/4 of the space */
+        }
+
+        /* Common Styling for content sections */
+        .blog-post, .sidebar-widget, .comment-section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        /* Metadata Styles (Author, Date) */
+        .post-meta {
+            color: #6c757d; /* Grey text */
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        /* Category and Tag Styles */
+        .tag, .category {
+            display: inline-block;
+            background-color: #28a745; /* Green color for tags/categories */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            text-decoration: none;
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+
+        /* Comment Section Styles */
+        .comment {
+            border-top: 1px dashed #ccc;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .comment-form input[type="text"], .comment-form textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .comment-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Simple Responsive Adjustment */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stacks content and sidebar vertically on mobile */
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>💻 Tech Insights Blog</h1>
+        <p>Exploring the Digital World, One Concept at a Time</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="main-content">
+            
+            <article class="blog-post">
+                <h2>What is Artificial Intelligence (AI)?</h2>
+                <div class="post-meta">
+                    Posted by **Alex** on November 26, 2025 | In 
+                    <a href="#" class="category">Technology</a>
+                </div>
+
+                <p>Artificial Intelligence, or **AI**, is the simulation of human intelligence processes by machines, especially computer systems. These processes include learning (the acquisition of information and rules for using the information), reasoning (using rules to reach approximate or definite conclusions), and self-correction.</p>
+
+                <p>Simply put, AI aims to make computers **think and act like humans**. It powers everything from simple voice assistants on your phone to complex medical diagnostic tools. It's the technology that's defining our future!</p>
+
+                <p>Tags: 
+                    <a href="#" class="tag">#AI</a>
+                    <a href="#" class="tag">#Basics</a>
+                    <a href="#" class="tag">#MachineLearning</a>
+                </p>
+            </article>
+            
+            <article class="blog-post">
+                <h2>A Beginner's Guide to Cloud Computing</h2>
+                <div class="post-meta">
+                    Posted by **Sarah** on November 20, 2025 | In 
+                    <a href="#" class="category">Cloud</a>
+                </div>
+
+                <p>**Cloud computing** is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet ("the cloud"). Instead of owning your own computing infrastructure or data centers, you can rent access to anything from applications to storage from a cloud provider.</p>
+
+                <p>The three main service models are: IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service).</p>
+
+                <p>Tags: 
+                    <a href="#" class="tag">#Cloud</a>
+                    <a href="#" class="tag">#AWS</a>
+                    <a href="#" class="tag">#WebDev</a>
+                </p>
+            </article>
+
+            <section class="comment-section">
+                <h2>Comments (2)</h2>
+                
+                <div class="comment">
+                    <p class="comment-author">John Doe:</p>
+                    <p>Great explanation of AI basics! Which language is best for a beginner starting with Machine Learning?</p>
+                </div>
+                
+                <div class="comment">
+                    <p class="comment-author">Alex (Author):</p>
+                    <p>Thanks, John! **Python** is definitely the recommended starting language for ML due to its simplicity and huge library ecosystem (like NumPy and Pandas).</p>
+                </div>
+
+                <hr>
+
+                <h3>Leave a Comment</h3>
+                <form class="comment-form" action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <textarea rows="4" placeholder="Your Comment..." required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>
+        </div>
